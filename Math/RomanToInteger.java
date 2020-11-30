@@ -1,21 +1,22 @@
 // https://leetcode.com/problems/roman-to-integer/
 
 class RomanToInteger {
-    int getValue(char r) 
+    // HashMap can be used here
+    int getValue(char key) 
     { 
-        if (r == 'I') 
+        if (key == 'I') 
             return 1; 
-        if (r == 'V') 
+        if (key == 'V') 
             return 5; 
-        if (r == 'X') 
+        if (key == 'X') 
             return 10; 
-        if (r == 'L') 
+        if (key == 'L') 
             return 50; 
-        if (r == 'C') 
+        if (key == 'C') 
             return 100; 
-        if (r == 'D') 
+        if (key == 'D') 
             return 500; 
-        if (r == 'M') 
+        if (key == 'M') 
             return 1000; 
         return -1; 
     } 
